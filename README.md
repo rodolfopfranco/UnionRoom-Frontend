@@ -12,5 +12,5 @@ https://github.com/rodolfopfranco/UnionRoom-backend<br/>
 
 <b>Tecnologias utilizadas:</b>
 
-Linguagem: Angular 12<br/>
-Framework CSS: Bootstrap<br/>
+Linguagens: TypeScript, HTML5, CSS<br/>
+Frameworks: Angular 12, Bootstrap<br/>
