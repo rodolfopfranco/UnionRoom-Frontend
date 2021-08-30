@@ -14,22 +14,22 @@ export class RoomService {
 
   //API communication methods:
   getRoom(id:number) : Observable<any>{
-    return this.http.get('${this.baseUrl}/${id}');
+    return this.http.get(`${this.baseUrl}/${id}`);
   }
 
   createRoom(room: Object): Observable<Object>{
-    return this.http.post('${this.baseUrl}',room);
+    return this.http.post(`${this.baseUrl}`,room);
   }
 
   updateRoom(id:number, value:any) : Observable<Object>{
-    return this.http.put('${this.baseUrl}/${id}',value);
+    return this.http.put(`${this.baseUrl}/${id}`,value);
   }
 
   deleteRoom(id:number): Observable<any>{
-    return this.http.delete('${this.baseUrl}/${id}',{responseType:'text'});
+    return this.http.delete(`${this.baseUrl}/${id}`,{responseType:'text'});
   }
 
   getRoomList(): Observable<any>{
-    return this.http.get('${this.baseUrl}');
+    return this.http.get(`${this.baseUrl}`);
   }
 }
